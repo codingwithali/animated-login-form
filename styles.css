@@ -1,0 +1,113 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Background image from Unsplash related to login */
+  background: url("https://source.unsplash.com/800x600/?login") center/cover
+    no-repeat;
+  display: flex; /* Centering content vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Styling for the form container */
+.container {
+  position: relative;
+  width: 350px;
+  padding: 30px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.95
+  ); /* Semi-transparent white background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  text-align: center;
+  animation: glow 2s infinite alternate; /* Glowing animation */
+}
+
+/* Keyframes for the glowing effect */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #0056b3, 0 0 20px #0056b3, 0 0 30px #0056b3; /* Initial glowing effect */
+  }
+  to {
+    box-shadow: 0 0 20px #0056b3, 0 0 40px #0056b3, 0 0 60px #0056b3; /* Stronger glowing effect */
+  }
+}
+
+/* Styling for the heading */
+h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Styling for input fields and labels */
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(240, 240, 240, 0.8); /* Light gray background */
+  outline: none;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Ensure proper width */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: rgba(240, 240, 240, 0.9); /* Lighter background on focus */
+}
+
+/* Styling for the login button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative; /* Position for the icon */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
+}
+/* Styling for the forgot password and create account links */
+.forgot-password,
+.create-account {
+  margin-top: 20px; /* Increased margin */
+  font-size: 14px; /* Smaller font size */
+  color: #777; /* Slightly lighter color */
+}
+
+.create-account span {
+  font-weight: bold; /* Bold text */
+}
+
+.forgot-password a,
+.create-account a {
+  color: #007bff; /* Blue color for the links */
+  text-decoration: none;
+}
